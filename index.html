@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+		rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body class="flex flex-col center">
+
+	<main class="flex flex-col center flex-1">
+		<section class="flex flex-col container">
+			<form id="dateForm" class="flex center">
+				<fieldset class="form-group flex flex-col">
+					<label for="day">DAY</label>
+					<input type="text" name="day" id="day" autocomplete="off" maxlength="2" placeholder="DD" />
+					<p class="hide text-error day"></p>
+				</fieldset>
+				<fieldset class="form-group flex flex-col">
+					<label for="month">MONTH</label>
+					<input type="text" name="month" id="month" autocomplete="off" maxlength="2" placeholder="MM" />
+					<p class="hide text-error month"></p>
+				</fieldset>
+				<fieldset class="form-group flex flex-col">
+					<label for="year">YEAR</label>
+					<input type="text" name="year" id="year" autocomplete="off" maxlength="4" placeholder="YYYY" />
+					<p class="hide text-error year"></p>
+				</fieldset>
+			</form>
+			<section class="divider">
+				<img src="./assets/images/icon-arrow.svg" alt="Divider">
+			</section>
+			<section class="flex flex-col result">
+				<h1 class="title" id="resultYear">
+					<span class="value">--</span>
+					years
+				</h1>
+				<h1 class="title" id="resultMonth">
+					<span class="value">--</span>
+					months
+				</h1>
+				<h1 class="title" id="resultDay">
+					<span class="value">--</span>
+					days
+				</h1>
+			</section>
+		</section>
+	</main>
+
+
+	<div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="https://github.com/mateusdeitos" target="_blank">Mateus Deitos</a>.
+	</div>
+	<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
